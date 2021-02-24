@@ -2,29 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Deck : MonoBehaviour
+public class Deck 
 {
-    Stack<Card> deck;
-    
-    // Start is called before the first frame update
-    void Start()
+    private Stack<Card> deck;
+
+    public Deck()
     {
         deck = new Stack<Card>(); 
         initializeDeck();
         int i = 0;
+        
+        //DEBUG
+        /*
         foreach(Card d in deck)
         {
             Debug.Log(i + " Number: " + d.getNumber() + " Suit: " + d.getSuit() + " Rule: " + d.getRule());
             i++;
         }
-            
+        */    
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void initializeDeck()
     {
@@ -52,5 +49,10 @@ public class Deck : MonoBehaviour
             
         }
         return tempStack;
+    }
+
+    public Card drawCard()
+    {
+        return deck.Pop();
     }
 }
