@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player 
+public class Player : MonoBehaviour
 {
     private List<Card> hand;
     private Deck deck;
-
-    public Player(Deck d)
+    private bool isDealer;
+    private int turn;
+    public Player(Deck d, bool i, int t)
     {
         hand = new List<Card>();
         deck = d;
+        isDealer = i;
+        turn = t;
     }
 
     public List<Card> getHand()
@@ -26,7 +29,6 @@ public class Player
 
     public void discardCard(Card c)
     {
-        
         hand.Remove(c);
     }
 }
