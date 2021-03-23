@@ -138,7 +138,7 @@ public class Card : MonoBehaviour
 
     public void flipCard()
     {
-        if(faceDown)
+        if (faceDown)
         {
             spriteRenderer.sprite = sprite;
             faceDown = false;
@@ -148,6 +148,25 @@ public class Card : MonoBehaviour
             spriteRenderer.sprite = topSprite;
             faceDown = true;
         }
+    }
 
+    public void moveCard(float xPos, float yPos)
+    {
+        cardObj.transform.position = new Vector2(xPos, yPos);
+    }
+
+    public void rotateCard()
+    {
+        cardObj.transform.eulerAngles = Vector3.forward * 90;
+    }
+
+    public GameObject getCardObj()
+    {
+        return cardObj;
+    }
+
+    public void setCardObj(GameObject g)
+    {
+        cardObj = g;
     }
 }

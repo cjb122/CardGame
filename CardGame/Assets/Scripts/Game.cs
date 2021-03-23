@@ -4,13 +4,24 @@ using UnityEngine;
 
 public class Game : MonoBehaviour
 {
+    // Player object for each individual player
     private Player king;
     private Player jess;
     private Player keith;
     private Player player;
+
+    // Card objects
     private Deck deck;
     private Discard discard;
     private Card topCard;
+
+    /*
+     * Turn order:
+     * Jess - 1
+     * Player - 2
+     * Keith - 3
+     * King - 4
+     */
     private int currentTurn;
 
 
@@ -18,10 +29,10 @@ public class Game : MonoBehaviour
     void Start()
     {
         deck = new Deck();
-        king = new Player(deck, true, 4);
-        jess = new Player(deck, false, 1);
-        player = new Player(deck, false, 2);
-        keith = new Player(deck, false, 3);
+        king = new Player(deck, true, false, 4, "King");
+        jess = new Player(deck, false, false, 1, "Jess");
+        player = new Player(deck, false, true, 2, "Player");
+        keith = new Player(deck, false, false, 3, "Keith");
         deal();
         discard = new Discard(deck.drawCard());
         currentTurn = 1;
@@ -41,7 +52,7 @@ public class Game : MonoBehaviour
 
     private void deal()
     {
-        for(int i = 0; i < 3; i++)
+        for(int i = 0; i < 13; i++)
         {
             king.drawCard();
             jess.drawCard();
