@@ -52,7 +52,7 @@ public class Game : MonoBehaviour
 
     private void deal()
     {
-        for(int i = 0; i < 13; i++)
+        for(int i = 0; i < 3; i++)
         {
             king.drawCard();
             jess.drawCard();
