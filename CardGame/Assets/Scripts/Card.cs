@@ -2,39 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Card 
+public class Card : MonoBehaviour
 {
-    string number;
-    string suit;
-    string rule;
-
-    // Start is called before the first frame update
+    private string number;
+    private string suit;
+    private string rule;
+    private Sprite sprite;
+    private Sprite topSprite;
+    private CardSprites cardSpriteCollection;
+    private SpriteRenderer spriteRenderer;
+    private bool faceDown;
+    GameObject cardObj;
+    
     public Card(int n, int s)
     {
+        //Initialize properties
+        cardSpriteCollection = GameObject.FindObjectOfType<CardSprites>();
         this.number = setNumber(n);
         this.suit = setSuit(s);
+        this.sprite = setSprite(n, s);
+        this.rule = setRule(n);
+        this.topSprite = cardSpriteCollection.getTop();
+        this.faceDown = true;
 
-        switch(n)
-        {
-            case 1:
-                rule = "skip";
-                break;
-            case 7:
-                rule = "draw";
-                break;
-            case 8:
-                rule = "switch";
-                break;
-            case 11:
-                rule = "suit";
-                break;
-            default:
-                rule = "";
-                break;
-        }
+        //Temporary for testing measures
+        createCard();
     }
 
-    public string setSuit(int s)
+    private string setSuit(int s)
     {
         switch (s)
         {
@@ -51,7 +46,7 @@ public class Card
         return "Error";
     }
 
-    public string setNumber(int n)
+    private string setNumber(int n)
     {
         switch (n)
         {
@@ -87,6 +82,38 @@ public class Card
         return "Error";
     }
 
+    // -1 due to the array being instanced at 0
+    private Sprite setSprite(int n, int s)
+    {
+        if (s == 1)
+            return cardSpriteCollection.getSpades(n-1);
+        else if (s == 2)
+            return cardSpriteCollection.getHearts(n-1);
+        else if (s == 3)
+            return cardSpriteCollection.getDiamonds(n-1);
+        else if (s == 4)
+            return cardSpriteCollection.getClubs(n-1);
+
+        return null;
+    }
+
+    private string setRule(int n)
+    {
+        switch (n)
+        {
+            case 1:
+                return "skip";
+            case 7:
+                return "draw";
+            case 8:
+                return "switch";
+            case 11:
+                return "suit";
+            default:
+                return "";
+        }
+    }
+
     public string getSuit()
     {
         return suit;
@@ -100,5 +127,46 @@ public class Card
     public string getRule()
     {
         return rule;
+    }
+
+    public void createCard()
+    {
+        cardObj = new GameObject(this.number + " " + this.suit);
+        spriteRenderer = cardObj.AddComponent<SpriteRenderer>();
+        spriteRenderer.sprite = this.topSprite;
+    }
+
+    public void flipCard()
+    {
+        if (faceDown)
+        {
+            spriteRenderer.sprite = sprite;
+            faceDown = false;
+        }
+        else
+        {
+            spriteRenderer.sprite = topSprite;
+            faceDown = true;
+        }
+    }
+
+    public void moveCard(float xPos, float yPos)
+    {
+        cardObj.transform.position = new Vector2(xPos, yPos);
+    }
+
+    public void rotateCard()
+    {
+        cardObj.transform.eulerAngles = Vector3.forward * 90;
+    }
+
+    public GameObject getCardObj()
+    {
+        return cardObj;
+    }
+
+    public void setCardObj(GameObject g)
+    {
+        cardObj = g;
     }
 }
