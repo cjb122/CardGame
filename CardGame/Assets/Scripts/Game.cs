@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Game : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class Game : MonoBehaviour
     private Deck deck;
     private Discard discard;
     private Card topCard;
+
+    // Buttons
+    public Button drawCard;
 
     /*
      * Turn order:
@@ -71,5 +75,13 @@ public class Game : MonoBehaviour
             keith.drawCard();
         else if (p == player.getName())
             player.drawCard();
+    }
+
+    public void playerCardButton()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+            giveOutCard("Player");
+        }
     }
 }

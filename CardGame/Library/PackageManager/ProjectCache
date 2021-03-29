@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637524809113257164
+      ticks: 637525861701174305
     m_Hash: 918342589
   m_LockFileStatus:
     m_FilePath: C:/Users/cjbar/CardGame/CardGame/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637524809122773816
+      ticks: 637525861706589867
     m_Hash: 274049308
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
