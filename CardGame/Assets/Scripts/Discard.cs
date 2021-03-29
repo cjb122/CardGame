@@ -6,12 +6,16 @@ public class Discard : MonoBehaviour
 {
     private Stack<Card> discard;
     private Card topCard;
+    private GameObject loc;
     
     public Discard(Card c)
     {
         discard = new Stack<Card>();
         discard.Push(c);
         topCard = c;
+        loc = GameObject.FindGameObjectsWithTag("Discard")[0];
+        topCard.flipCard();
+        topCard.moveCard(loc.transform.position.x, loc.transform.position.y);
     }
         
     public Card getTopCard()

@@ -13,7 +13,8 @@ public class Card : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private bool faceDown;
     GameObject cardObj;
-    
+
+    public Card() { }
     public Card(int n, int s)
     {
         //Initialize properties

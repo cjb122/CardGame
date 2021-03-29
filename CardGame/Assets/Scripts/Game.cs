@@ -38,7 +38,7 @@ public class Game : MonoBehaviour
         currentTurn = 1;
     }
 
-    public bool playCard(Card c)
+    public bool playCard(Card c, string player)
     {
         Card top = discard.getTopCard();
         if (top.getSuit() == c.getSuit() || top.getNumber() == c.getNumber())
@@ -59,5 +59,17 @@ public class Game : MonoBehaviour
             keith.drawCard();
             player.drawCard();
         }
+    }
+
+    public void giveOutCard(string p)
+    {
+        if (p == king.getName())
+            king.drawCard();
+        else if (p == jess.getName())
+            jess.drawCard();
+        else if (p == keith.getName())
+            keith.drawCard();
+        else if (p == player.getName())
+            player.drawCard();
     }
 }

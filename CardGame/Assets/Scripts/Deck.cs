@@ -46,13 +46,14 @@ public class Deck
             tempCard = Random.Range(0, 52 - i);
             tempStack.Push(d[tempCard]);
             d.RemoveAt(tempCard);
-            
         }
         return tempStack;
     }
 
     public Card drawCard()
     {
-        return deck.Pop();
+        if(deck.Count != 0)
+            return deck.Pop();
+        return null;
     }
 }
