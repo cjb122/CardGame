@@ -1,0 +1,2 @@
+CardGame/Library/PackageCache/com.unity.sysroot.linux-x86_64@0.1.14-preview/data~/payload.tar.7z filter=lfs diff=lfs merge=lfs -text
+CardGame/Library/PackageCache/com.unity.toolchain.win-x86_64-linux-x86_64@0.1.19-preview/data~/payload.tar.7z filter=lfs diff=lfs merge=lfs -text
