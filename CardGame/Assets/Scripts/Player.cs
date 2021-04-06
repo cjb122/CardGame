@@ -28,39 +28,114 @@ public class Player : MonoBehaviour
         turn = t;
         playerName = n;
         mat = GameObject.FindGameObjectsWithTag(playerName)[0];
-        matOffset = 0f;
+        matOffset = Constants.CARDSIZE;
     }
 
-    public void drawCard()
+    public bool drawCard()
     {
         Card c = deck.drawCard();
         if (!Object.Equals(c, null))
         {
             hand.Add(c);
-
-            matOffset += c.getCardObj().GetComponent<SpriteRenderer>().bounds.size.x;
-
             if (playerName == "King" || playerName == "Player")
             {
-                c.moveCard(mat.transform.position.x - (mat.GetComponent<SpriteRenderer>().bounds.size.x / 2)
-                            + matOffset, mat.transform.position.y);
+                c.moveCard(mat.transform.position.x - (Constants.XMAT / 2) + matOffset, mat.transform.position.y);
+                if (matOffset > Constants.XMAT - (Constants.CARDSIZE * 4))
+                    resizeHand();
             }
             else
             {
                 c.rotateCard();
-                c.moveCard(mat.transform.position.x, mat.transform.position.y -
-                    (mat.GetComponent<SpriteRenderer>().bounds.size.y / 2) + matOffset);
+                c.moveCard(mat.transform.position.x, mat.transform.position.y - (Constants.YMAT / 2) + matOffset);
+                if (matOffset > Constants.YMAT - (Constants.CARDSIZE * 4))
+                    resizeHandY();
             }
 
-            if (isMainPlayer)
-                c.flipCard();
+            //if (isMainPlayer)
+            c.flipCard();
+
+            matOffset += Constants.CARDSIZE;
+            return true;
         }
+        else
+            return false;
+        
     }
 
     public void discardCard(Card c)
     {
-        hand.Remove(c);
+        hand.RemoveAll(r => r.getSuit() + " " + r.getNumber() == c.getSuit() + " " + c.getNumber());
+        if (hand.Count * Constants.CARDSIZE > Constants.XMAT - (Constants.CARDSIZE * 4))
+            resizeHand();
+        else
+            reorganizeHand(Constants.CARDSIZE, false);
     }
+
+    public void reorganizeHand(float offset, bool layered)
+    {
+        matOffset = Constants.CARDSIZE;
+        float index = 1;
+        foreach (Card c in this.getHand().ToArray())
+        {
+            if (playerName == "King" || playerName == "Player")
+            {
+                c.moveCard(mat.transform.position.x - (Constants.XMAT / 2)
+                            + matOffset, mat.transform.position.y);
+                if (layered)
+                    c.setLayer(index);
+            }
+            else
+            {
+                c.rotateCard();
+                c.moveCard(mat.transform.position.x, mat.transform.position.y - (Constants.YMAT / 2) + matOffset);
+                if (layered)
+                    c.setLayer(index);
+            }
+            
+            matOffset += offset;
+            index++;
+        }
+    }
+
+    public void resizeHand()
+    {
+        int count = 0;
+        float tempOff = (Constants.XMAT - (Constants.CARDSIZE * count)) / hand.Count;
+        while(tempOff * hand.Count >= Constants.XMAT - (Constants.CARDSIZE*2))
+        {
+            tempOff -= 0.001f;
+            count++;
+            
+            //Infintie Loop Failsafe
+            if (count > 600000)
+                break;
+        }
+           
+        if (tempOff > 1)
+            reorganizeHand(Constants.CARDSIZE, false);
+        else
+            reorganizeHand(tempOff, true);
+    }
+    public void resizeHandY()
+    {
+        int count = 0;
+        float tempOff = (Constants.YMAT - (Constants.CARDSIZE * count)) / hand.Count;
+        while (tempOff * hand.Count >= Constants.YMAT - (Constants.CARDSIZE * 2))
+        {
+            tempOff -= 0.001f;
+            count++;
+
+            //Infintie Loop Failsafe
+            if (count > 600000)
+                break;
+        }
+
+        if (tempOff > 1)
+            reorganizeHand(Constants.CARDSIZE, false);
+        else
+            reorganizeHand(tempOff, true);
+    }
+
 
     // Getters and Setters
     public void setName(string n)

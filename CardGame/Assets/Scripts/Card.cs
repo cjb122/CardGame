@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Card : MonoBehaviour
 {
-    private string number;
-    private string suit;
-    private string rule;
-    private Sprite sprite;
-    private Sprite topSprite;
-    private CardSprites cardSpriteCollection;
-    private SpriteRenderer spriteRenderer;
-    private bool faceDown;
+    public string number;
+    public string suit;
+    public string rule;
+    public Sprite sprite;
+    public Sprite topSprite;
+    public CardSprites cardSpriteCollection;
+    public SpriteRenderer spriteRenderer;
+    public bool faceDown;
     GameObject cardObj;
+    public bool rotated;
 
     public Card() { }
     public Card(int n, int s)
@@ -25,6 +26,7 @@ public class Card : MonoBehaviour
         this.rule = setRule(n);
         this.topSprite = cardSpriteCollection.getTop();
         this.faceDown = true;
+        this.rotated = false;
 
         //Temporary for testing measures
         createCard();
@@ -35,13 +37,13 @@ public class Card : MonoBehaviour
         switch (s)
         {
             case 1:
-                return "Spades";
+                return "Spade";
             case 2:
                 return "Heart";
             case 3:
                 return "Diamond";
             case 4:
-                return "Clubs";
+                return "Club";
         }
 
         return "Error";
@@ -135,6 +137,7 @@ public class Card : MonoBehaviour
         cardObj = new GameObject(this.number + " " + this.suit);
         spriteRenderer = cardObj.AddComponent<SpriteRenderer>();
         spriteRenderer.sprite = this.topSprite;
+        cardObj.AddComponent<BoxCollider2D>().isTrigger = true;
     }
 
     public void flipCard()
@@ -159,6 +162,13 @@ public class Card : MonoBehaviour
     public void rotateCard()
     {
         cardObj.transform.eulerAngles = Vector3.forward * 90;
+        rotated = true;
+    }
+
+    public void rotateCardBack()
+    {
+        cardObj.transform.eulerAngles = Vector3.forward * 0;
+        rotated = false;
     }
 
     public GameObject getCardObj()
@@ -170,4 +180,26 @@ public class Card : MonoBehaviour
     {
         cardObj = g;
     }
+
+    public SpriteRenderer getSpriteRenderer()
+    {
+        return spriteRenderer;
+    }
+
+    public void setSpriteRenderer(SpriteRenderer s)
+    {
+        spriteRenderer = s;
+    }
+
+    public float cardSize()
+    {
+        return GetComponent<SpriteRenderer>().bounds.size.x;
+    }
+
+    public void setLayer(float index)
+    {
+        spriteRenderer.sortingLayerName = "Card" + index;
+        cardObj.transform.position = new Vector3(cardObj.transform.position.x, cardObj.transform.position.y, -index/10);
+    }
+
 }

@@ -26,6 +26,14 @@ public class Discard : MonoBehaviour
     public void discardCard(Card c)
     {
         discard.Push(c);
+        if (c.faceDown)
+            c.flipCard();
+        
+        c.moveCard(loc.transform.position.x, loc.transform.position.y);
+        topCard.getSpriteRenderer().sortingLayerName = "Default";
+        c.getSpriteRenderer().sortingLayerName = "TopCard";
         topCard = c;
+        if (topCard.rotated)
+            topCard.rotateCardBack();
     }
 }
