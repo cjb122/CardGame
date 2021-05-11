@@ -32,6 +32,7 @@ public class Discard : MonoBehaviour
         c.moveCard(loc.transform.position.x, loc.transform.position.y);
         topCard.getSpriteRenderer().sortingLayerName = "Default";
         c.getSpriteRenderer().sortingLayerName = "TopCard";
+        Debug.Log(c.getNumber() + " " + c.getSuit() + " " + c.getSpriteRenderer().sortingLayerName);
         topCard = c;
         if (topCard.rotated)
             topCard.rotateCardBack();

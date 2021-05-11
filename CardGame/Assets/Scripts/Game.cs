@@ -30,7 +30,24 @@ public class Game : MonoBehaviour
     private int turnDirection;
     private bool hasPlayed;
 
+    // Card rule booleans
+    private bool needToHandOutCard;
+    private bool handedOutCard;
+    private bool needToChangeSuit;
+    private bool changedSuit;
+
     public Text displayText;
+    public Dropdown suit;
+    public Dropdown players;
+
+    // Card prefabs
+    public bool instantiated;
+    public Card club;
+    public Card diamond;
+    public Card heart;
+    public Card spade;
+
+    public Dropdown suitDropdown;
 
     // Start is called before the first frame update
     void Start()
@@ -47,6 +64,14 @@ public class Game : MonoBehaviour
         turnDirection = 1;
         hasPlayed = false;
         takingTurn = true;
+        instantiated = false;
+
+        /*
+        spade = Instantiate(spade, new Vector3(100, 100, 0), Quaternion.identity);
+        diamond = Instantiate(diamond, new Vector3(100, 100, 0), Quaternion.identity);
+        heart = Instantiate(heart, new Vector3(100, 100, 0), Quaternion.identity);
+        club = Instantiate(club, new Vector3(100, 100, 0), Quaternion.identity);
+        */
     }
 
     void Update()
@@ -88,11 +113,14 @@ public class Game : MonoBehaviour
             else if (hasPlayed)
             {
                 gameTimer = 0;
+                if (discard.getTopCard().getNumber() == "Jack" && currentTurn != player.getTurn())
+                    npcChangeSuit(getCurrentNpc());
                 setTurn();
                 hasPlayed = false;
                 if (currentTurn != player.getTurn())
                 {
                     takingTurn = false;
+                    instantiated = false;
                     StartCoroutine(Wait());
                 }
             }
@@ -105,7 +133,7 @@ public class Game : MonoBehaviour
         bool hp = false;
         foreach (Card c in p.getHand().ToArray())
         {
-            if (playCard(c, p.getName()))
+            if (playCard(c, p))
             {
                 discard.discardCard(c);
                 p.discardCard(c);
@@ -133,8 +161,6 @@ public class Game : MonoBehaviour
             currentTurn = 1;
         else if (turnDirection == -1 && currentTurn == 0)
             currentTurn = 4;
-
-        Debug.Log(currentTurn);
     }
 
     //Called if players exceed 10 seconds on their turn
@@ -168,7 +194,7 @@ public class Game : MonoBehaviour
                     if (currentTurn == player.getTurn())
                     {
                         //Make sure the player can actually play the card
-                        if (playCard(c, "Player"))
+                        if (playCard(c, player))
                         {
                             discard.discardCard(c);
                             player.discardCard(c);
@@ -196,7 +222,7 @@ public class Game : MonoBehaviour
         return false;
     }
 
-    public bool playCard(Card c, string player)
+    public bool playCard(Card c, Player player)
     {
         Card top = discard.getTopCard();
         if (top.getSuit() == c.getSuit() || top.getNumber() == c.getNumber())
@@ -213,7 +239,7 @@ public class Game : MonoBehaviour
 
     private void deal()
     {
-        for(int i = 0; i < 3; i++)
+        for(int i = 0; i < 6; i++)
         {
             king.drawCard();
             jess.drawCard();
@@ -255,6 +281,7 @@ public class Game : MonoBehaviour
         takingTurn = true;
     }
 
+    // Decision tree of what hints to give a player if they break a rule
     public void punishPlayer(string rule)
     {
         if (rule == "Draw")
@@ -281,6 +308,7 @@ public class Game : MonoBehaviour
         }
     }
 
+    // Decision tree of what hints to give a player if an npc breaks a rule
     public void punishNPC(string rule, Player p)
     {
         if (rule == "Draw")
@@ -307,6 +335,87 @@ public class Game : MonoBehaviour
         }
     }
 
+    // When a Jack is played, the npc can change suit
+    // Currently, they pick the suit they have the most of in their hand
+    public void npcChangeSuit(Player p)
+    {
+        string suit = "";
+        int largest = 0;
+        int spadeCount = 0;
+        int diamondCount = 0;
+        int heartCount = 0;
+        int clubCount = 0;
+
+        foreach (Card c in p.getHand().ToArray())
+        {
+            if (c.getSuit() == "Spade")
+            {
+                spadeCount++;
+                if(spadeCount > largest)
+                {
+                    suit = "Spade";
+                    largest = spadeCount;
+                }
+            }
+            else if (c.getSuit() == "Heart")
+            { 
+                heartCount++;
+                if (heartCount > largest)
+                {
+                    suit = "Heart";
+                    largest = heartCount;
+                }
+            }
+            else if (c.getSuit() == "Diamond")
+            {
+                diamondCount++;
+                if (diamondCount > largest)
+                {
+                    suit = "Diamond";
+                    largest = diamondCount;
+                }
+            }
+            else if (c.getSuit() == "Club")
+            {
+                clubCount++;
+                if (clubCount > largest)
+                {
+                    suit = "Club";
+                    largest = clubCount;
+                }
+            }
+        }
+
+        if (suit == "Club" && !instantiated)
+        {
+            discard.discardCard(new Card(14, 4));
+            instantiated = true;
+        }
+        else if (suit == "Diamond" && !instantiated)
+        {
+            discard.discardCard(new Card(14, 3));
+            instantiated = true;
+        }
+        else if (suit == "Heart" && !instantiated)
+        {
+            discard.discardCard(new Card(14, 2));
+            instantiated = true;
+        }
+        else if (suit == "Spade" && !instantiated)
+        {
+            discard.discardCard(new Card(14, 1));
+            instantiated = true;
+        }
+    }
+    public void changeSuit()
+    {
+        string curSuit = suit.options[suit.value].text;
+    }
+
+    /*
+     *  Getters and Setters
+     */
+
     public int getCurrentTurn()
     {
         return currentTurn;
@@ -315,5 +424,40 @@ public class Game : MonoBehaviour
     public void setText(string s)
     {
         displayText.text = s;
+    }
+
+    public Deck getDeck()
+    {
+        return deck;
+    }
+    public Discard getDiscard()
+    {
+        return discard;
+    }
+
+    public Card getPrefab(string prefab)
+    {
+        if (prefab == "Spade")
+            return spade;
+        else if (prefab == "Heart")
+            return heart;
+        else if (prefab == "Club")
+            return club;
+        else if (prefab == "Diamond")
+            return diamond;
+
+        return null;
+    }
+
+    public Player getCurrentNpc()
+    {
+        if (currentTurn == king.getTurn())
+            return king;
+        if (currentTurn == jess.getTurn())
+            return jess;
+        if (currentTurn == keith.getTurn())
+            return keith;
+
+        return null;
     }
 }

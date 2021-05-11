@@ -79,6 +79,8 @@ public class Card : MonoBehaviour
                 return "Queen";
             case 13:
                 return "King";
+            case 14 :
+                return "Any";
         }
 
 

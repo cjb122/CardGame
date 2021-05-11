@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\DiscardCard.cs" />
+    <Compile Include="Assets\Scripts\ChoseSuitButton.cs" />
     <Compile Include="Assets\Scripts\Constants.cs" />
     <Compile Include="Assets\Scripts\Card.cs" />
     <Compile Include="Assets\Scripts\Game.cs" />
@@ -65,6 +66,8 @@
     <Compile Include="Assets\Scripts\DrawCardButton.cs" />
     <Compile Include="Assets\Scripts\CardSprites.cs" />
     <Compile Include="Assets\Scripts\Discard.cs" />
+    <Compile Include="Assets\Scripts\GiveCardToPlayerButton.cs" />
+    <Compile Include="Assets\Scripts\GameActions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

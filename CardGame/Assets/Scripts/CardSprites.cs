@@ -12,7 +12,7 @@ public class CardSprites : MonoBehaviour
 
     public Sprite getSpades(int num)
     {
-        if (num > 13 || num < 0)
+        if (num > 14 || num < 0)
         {
             return null;
         }
@@ -21,7 +21,7 @@ public class CardSprites : MonoBehaviour
 
     public Sprite getHearts(int num)
     {
-        if (num > 13 || num < 0)
+        if (num > 14 || num < 0)
         {
             return null;
         }
@@ -30,7 +30,7 @@ public class CardSprites : MonoBehaviour
 
     public Sprite getDiamonds(int num)
     {
-        if (num > 13 || num < 0)
+        if (num > 14 || num < 0)
         {
             return null;
         }
@@ -39,7 +39,7 @@ public class CardSprites : MonoBehaviour
 
     public Sprite getClubs(int num)
     {
-        if (num > 13 || num < 0)
+        if (num > 14 || num < 0)
         {
             return null;
         }
