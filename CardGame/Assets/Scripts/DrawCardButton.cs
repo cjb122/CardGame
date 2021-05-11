@@ -9,10 +9,10 @@ public class DrawCardButton : MonoBehaviour
         Game g = GameObject.FindObjectOfType<Game>();
         if (g.getCurrentTurn() == 2)
         {
-            g.giveOutCard("Player");
+            GameActions.giveOutCard("Player", g.getKing(), g.getJess(), g.getKeith(), g.getPlayer());
             g.setText("You had to draw a card");
         }
         else
-            g.punishPlayer("Draw");
+            GameActions.punishPlayer("Draw", g.displayText, g.getPlayer());
     }
 }
