@@ -99,7 +99,7 @@ public class Game : MonoBehaviour
             {
                 gameTimer = 0;
                 GameActions.forceDraw(currentTurn, king, jess, keith, player, displayText);
-                GameActions.setTurn(currentTurn, turnDirection);
+                currentTurn = GameActions.setTurn(currentTurn, turnDirection);
                 hasPlayed = false;
                 if(currentTurn != player.getTurn())
                 {
@@ -114,7 +114,7 @@ public class Game : MonoBehaviour
                 gameTimer = 0;
                 if (discard.getTopCard().getNumber() == "Jack" && currentTurn != player.getTurn())
                     GameActions.npcChangeSuit(getCurrentNpc(), instantiated, discard);
-                GameActions.setTurn(currentTurn, turnDirection);
+                currentTurn = GameActions.setTurn(currentTurn, turnDirection);
                 hasPlayed = false;
                 if (currentTurn != player.getTurn())
                 {
@@ -204,5 +204,20 @@ public class Game : MonoBehaviour
     public Player getPlayer()
     {
         return player;
+    }
+
+    public void setCurrentTurn(int t)
+    {
+        currentTurn = t;
+    }
+
+    public void setTurnDirection()
+    {
+        turnDirection *= -1;
+    }
+
+    public int getTurnDirection()
+    {
+        return turnDirection;
     }
 }
