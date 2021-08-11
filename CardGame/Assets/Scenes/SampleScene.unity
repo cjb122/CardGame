@@ -417,7 +417,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 349924330}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef9fa2eac38c89143886e5b481710791, type: 3}
+  m_Script: {fileID: 11500000, guid: 50b77ece29baf6e448a0e8650eb83c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &349924333
@@ -717,6 +717,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34dff0aa074bce4eaac834fad0328f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  haveToPickButton: 0
+  pickPlayer: 0
+  pickSuit: 0
   displayText: {fileID: 569757977}
   suit: {fileID: 1056626137}
   players: {fileID: 1906083403}
@@ -1932,7 +1935,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1132274151}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef9fa2eac38c89143886e5b481710791, type: 3}
+  m_Script: {fileID: 11500000, guid: b556e6b235ac6f4408b23498852fff47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &1132274154
@@ -2054,8 +2057,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -293576725
-  m_SortingLayer: -1
+  m_SortingLayerID: 843762437
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dd3b7a122a97e294d816120d9868aa98, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

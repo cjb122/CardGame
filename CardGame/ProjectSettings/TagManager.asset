@@ -42,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 843762437
+    locked: 1
   - name: CardMat
     uniqueID: 4001390571
     locked: 0
