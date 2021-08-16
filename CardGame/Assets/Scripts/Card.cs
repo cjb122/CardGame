@@ -15,6 +15,9 @@ public class Card : MonoBehaviour
     GameObject cardObj;
     public bool rotated;
 
+    //Specific to Jacks
+    public bool playedCorrectly;
+
     public Card() { }
     public Card(int n, int s)
     {
@@ -27,9 +30,15 @@ public class Card : MonoBehaviour
         this.topSprite = cardSpriteCollection.getTop();
         this.faceDown = true;
         this.rotated = false;
+        if(this.number == "Jack")
+            this.playedCorrectly = false;
+        else
+            this.playedCorrectly = true;
 
         //Temporary for testing measures
         createCard();
+
+
     }
 
     private string setSuit(int s)
@@ -202,6 +211,16 @@ public class Card : MonoBehaviour
     {
         spriteRenderer.sortingLayerName = "Card" + index;
         cardObj.transform.position = new Vector3(cardObj.transform.position.x, cardObj.transform.position.y, -index/10);
+    }
+
+    public void setPlayedCorrectly(bool b)
+    {
+        playedCorrectly = b;
+    }
+
+    public bool getPlayedCorrectly()
+    {
+        return playedCorrectly;
     }
 
 }

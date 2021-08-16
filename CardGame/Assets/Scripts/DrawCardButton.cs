@@ -10,6 +10,7 @@ public class DrawCardButton : MonoBehaviour
         if (g.getCurrentTurn() == 2)
         {
             GameActions.giveOutCard("Player", g.getKing(), g.getJess(), g.getKeith(), g.getPlayer());
+            g.setHasPlayed(true);
             g.setText("You had to draw a card");
         }
         else

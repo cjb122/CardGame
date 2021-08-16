@@ -30,6 +30,11 @@ public class Game : MonoBehaviour
     private int turnDirection;
     private bool hasPlayed;
 
+    // Required for button rules
+    public bool haveToPickButton;
+    public bool pickPlayer;
+    public bool pickSuit;
+
     // Card rule booleans
     private bool needToHandOutCard;
     private bool handedOutCard;
@@ -51,7 +56,8 @@ public class Game : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {deck = new Deck();
+    {
+        deck = new Deck();
         king = new Player(deck, true, false, 4, "King");
         jess = new Player(deck, false, false, 1, "Jess");
         player = new Player(deck, false, true, 2, "Player");
@@ -64,14 +70,17 @@ public class Game : MonoBehaviour
         hasPlayed = false;
         takingTurn = true;
         instantiated = false;
+        haveToPickButton = false;
+        pickPlayer = false;
+        pickSuit = false;
 
-        /*
-        spade = Instantiate(spade, new Vector3(100, 100, 0), Quaternion.identity);
-        diamond = Instantiate(diamond, new Vector3(100, 100, 0), Quaternion.identity);
-        heart = Instantiate(heart, new Vector3(100, 100, 0), Quaternion.identity);
-        club = Instantiate(club, new Vector3(100, 100, 0), Quaternion.identity);
-        */
-    }
+    /*
+    spade = Instantiate(spade, new Vector3(100, 100, 0), Quaternion.identity);
+    diamond = Instantiate(diamond, new Vector3(100, 100, 0), Quaternion.identity);
+    heart = Instantiate(heart, new Vector3(100, 100, 0), Quaternion.identity);
+    club = Instantiate(club, new Vector3(100, 100, 0), Quaternion.identity);
+    */
+}
 
     void Update()
     {
@@ -95,11 +104,16 @@ public class Game : MonoBehaviour
             //Each player has 10 seconds to take their turn.
             //If they don't, they will be forced to draw a card and
             //their turn will be skipped
-            if (gameTimer >= 10 && !hasPlayed)
+            if (gameTimer >= 10 && !hasPlayed && haveToPickButton)
             {
                 gameTimer = 0;
+
+                haveToPickButton = false;
+                pickPlayer = false;
+                pickSuit = false;
+
                 GameActions.forceDraw(currentTurn, king, jess, keith, player, displayText);
-                GameActions.setTurn(currentTurn, turnDirection);
+                currentTurn = GameActions.setTurn(currentTurn, turnDirection);
                 hasPlayed = false;
                 if(currentTurn != player.getTurn())
                 {
@@ -109,17 +123,22 @@ public class Game : MonoBehaviour
             }
             //If the current player has played a correct card or drawn a card, 
             //it moved to the next player's turn
-            else if (hasPlayed)
+            else if (hasPlayed && !haveToPickButton)
             {
                 gameTimer = 0;
-                if (discard.getTopCard().getNumber() == "Jack" && currentTurn != player.getTurn())
+
+                if (discard.getTopCard().getNumber() == "Jack" && currentTurn != 2 
+                        && discard.getTopCard().getPlayedCorrectly())
                     GameActions.npcChangeSuit(getCurrentNpc(), instantiated, discard);
-                GameActions.setTurn(currentTurn, turnDirection);
+                currentTurn = GameActions.setTurn(currentTurn, turnDirection);
                 hasPlayed = false;
                 if (currentTurn != player.getTurn())
                 {
                     takingTurn = false;
                     instantiated = false;
+                    haveToPickButton = false;
+                    pickPlayer = false;
+                    pickSuit = false;
                     StartCoroutine(Wait());
                 }
             }
@@ -204,5 +223,54 @@ public class Game : MonoBehaviour
     public Player getPlayer()
     {
         return player;
+    }
+
+    public void setCurrentTurn(int t)
+    {
+        currentTurn = t;
+    }
+
+    public void setTurnDirection()
+    {
+        turnDirection *= -1;
+    }
+
+    public int getTurnDirection()
+    {
+        return turnDirection;
+    }
+    public void setHaveToPickButton(bool b)
+    {
+        haveToPickButton = b;
+    }
+
+    public bool getHaveToPickButton()
+    {
+        return haveToPickButton;
+    }
+    
+    public void setPickSuit(bool b)
+    {
+        pickSuit = b;
+    }
+
+    public bool getPickSuit()
+    {
+        return pickSuit;
+    }
+
+    public void setPickPlayer(bool b)
+    {
+        pickPlayer = b;
+    }
+
+    public bool getPickPlayer()
+    {
+        return pickPlayer;
+    }
+
+    public void setGameTimer(int i)
+    {
+        gameTimer = i;
     }
 }
