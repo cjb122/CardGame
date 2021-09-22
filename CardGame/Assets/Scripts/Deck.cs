@@ -56,4 +56,11 @@ public class Deck
             return deck.Pop();
         return null;
     }
+
+    public Card peekCard()
+    {
+        if (deck.Count != 0)
+            return deck.Peek();
+        return null;
+    }
 }
