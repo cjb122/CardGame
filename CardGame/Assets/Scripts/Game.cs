@@ -145,6 +145,35 @@ public class Game : MonoBehaviour
         }
     }
 
+    public Player getNextPlayer()
+    {
+        switch (currentTurn)
+        {
+            case 1:
+                if (turnDirection == -1)
+                    return king;
+                else
+                    return player;
+            case 2:
+                if (turnDirection == -1)
+                    return jess;
+                else
+                    return keith;
+            case 3:
+                if (turnDirection == -1)
+                    return player;
+                else
+                    return king;
+            case 4:
+                if (turnDirection == -1)
+                    return keith;
+                else
+                    return jess;
+            default:
+                return null;
+        }
+    }
+
     IEnumerator Wait()
     {
         yield return new WaitForSeconds(3f);

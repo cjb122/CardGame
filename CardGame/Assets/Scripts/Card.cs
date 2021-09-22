@@ -18,6 +18,11 @@ public class Card : MonoBehaviour
     //Specific to Jacks
     public bool playedCorrectly;
 
+    //Used for animation
+    public bool moving;
+    public Vector3 destination;
+    public float speed; 
+
     public Card() { }
     public Card(int n, int s)
     {
@@ -30,6 +35,8 @@ public class Card : MonoBehaviour
         this.topSprite = cardSpriteCollection.getTop();
         this.faceDown = true;
         this.rotated = false;
+        this.moving = true;
+        this.speed = 1;
         if(this.number == "Jack")
             this.playedCorrectly = false;
         else
@@ -37,6 +44,7 @@ public class Card : MonoBehaviour
 
         //Temporary for testing measures
         createCard();
+
 
 
     }
@@ -149,6 +157,7 @@ public class Card : MonoBehaviour
         spriteRenderer = cardObj.AddComponent<SpriteRenderer>();
         spriteRenderer.sprite = this.topSprite;
         cardObj.AddComponent<BoxCollider2D>().isTrigger = true;
+        cardObj.AddComponent<CardMovement>();
     }
 
     public void flipCard()
@@ -163,11 +172,6 @@ public class Card : MonoBehaviour
             spriteRenderer.sprite = topSprite;
             faceDown = true;
         }
-    }
-
-    public void moveCard(float xPos, float yPos)
-    {
-        cardObj.transform.position = new Vector2(xPos, yPos);
     }
 
     public void rotateCard()
@@ -221,6 +225,11 @@ public class Card : MonoBehaviour
     public bool getPlayedCorrectly()
     {
         return playedCorrectly;
+    }
+
+    public void moveCard(float xPos, float yPos)
+    {
+        cardObj.GetComponent<CardMovement>().moveCard(xPos, yPos);
     }
 
 }

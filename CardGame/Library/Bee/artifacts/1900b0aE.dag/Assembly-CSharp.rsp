@@ -336,6 +336,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Card.cs"
+"Assets/Scripts/CardMovement.cs"
 "Assets/Scripts/CardSprites.cs"
 "Assets/Scripts/ChoseSuitButton.cs"
 "Assets/Scripts/Constants.cs"
@@ -343,10 +344,12 @@
 "Assets/Scripts/Discard.cs"
 "Assets/Scripts/DiscardCard.cs"
 "Assets/Scripts/DrawCardButton.cs"
+"Assets/Scripts/DumbAI.cs"
 "Assets/Scripts/Game.cs"
 "Assets/Scripts/GameActions.cs"
 "Assets/Scripts/GiveCardToPlayerButton.cs"
 "Assets/Scripts/Player.cs"
+"Assets/Scripts/SmartAI.cs"
 -langversion:8.0
 
 /deterministic
