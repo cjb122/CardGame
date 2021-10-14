@@ -17,7 +17,10 @@ public static class GameActions
                 p.discardCard(c);
                 c.setPlayedCorrectly(true);
                 hasPlayed = true;
-                displayText.text = p.getName() + " played the " + c.getNumber() + " of " + c.getSuit() + "s!";
+                if (c.getNumber() == "7")
+                    displayText.text = displayText.text + " and played the " + c.getNumber() + " of " + c.getSuit() + "s!";
+                else
+                    displayText.text = p.getName() + " played the " + c.getNumber() + " of " + c.getSuit() + "s!";
                 break;
             }
         }
@@ -122,7 +125,7 @@ public static class GameActions
             }
             else if(c.getNumber() == "Jack")
             {
-                if (g.getCurrentTurn() == 2)                
+                if (g.getCurrentTurn() == 2)
                 {
                     g.setHaveToPickButton(true);
                     g.setPickSuit(true);
@@ -137,6 +140,8 @@ public static class GameActions
                     g.setPickPlayer(true);
                     g.setGameTimer(0);
                 }
+                else
+                    npcGiveCard(g.getNextPlayer(), player);
             }
             return true;
         }
@@ -314,4 +319,15 @@ public static class GameActions
             instantiated = true;
         }
     }
+
+    public static void npcGiveCard(Player playerRec, Player playerGive)
+    {
+        Game g = GameObject.FindObjectOfType<Game>();
+        GameActions.giveOutCard(playerRec.getName(), g.getKing(), g.getJess(), g.getKeith(), g.getPlayer());
+        g.displayText.text = playerGive.getName() + " gave " +playerRec.getName() + " the " + g.getDeck().peekCard().number
+            + " of " + g.getDeck().peekCard().suit;
+        g.instantiated = true;
+    }
+
+    
 }
