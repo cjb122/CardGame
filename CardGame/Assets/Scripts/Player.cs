@@ -199,4 +199,12 @@ public class Player : MonoBehaviour
     {
         return hand;
     }
+
+    public Card getRandomCard()
+    {
+        int cardToReturn = Random.Range(0, hand.Count);
+
+        return hand[cardToReturn];
+
+    }
 }

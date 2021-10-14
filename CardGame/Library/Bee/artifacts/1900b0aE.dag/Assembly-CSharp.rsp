@@ -350,6 +350,7 @@
 "Assets/Scripts/GiveCardToPlayerButton.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/SmartAI.cs"
+"Assets/Scripts/StateObj.cs"
 -langversion:8.0
 
 /deterministic

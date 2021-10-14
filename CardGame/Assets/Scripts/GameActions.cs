@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public static class GameActions
 {
     //This is a perfect AI... it knows too much
-    public static bool npcCheckCard(Player p, Text displayText, Discard discard, int turnDirection, int currentTurn)
+    public static bool kingCheckCard(Player p, Text displayText, Discard discard, int turnDirection, int currentTurn)
     {
         bool hasPlayed = false;
         foreach (Card c in p.getHand().ToArray())
@@ -33,6 +33,43 @@ public static class GameActions
         }
 
         return hasPlayed;
+    }
+
+    public static string npcCheckCard(Card c, Player player, int currentTurn, int turnDirection, Discard discard, Text displayText)
+    {
+        bool hasPlayed = true;
+
+        //Make sure it is the player's turn
+        if (currentTurn == player.getTurn())
+        {
+            //Make sure the player can actually play the card
+            if (playCard(c, player, currentTurn, turnDirection, discard))
+            {
+                discard.discardCard(c);
+                player.discardCard(c);
+                displayText.text = "You played the " + c.getNumber() + " of " + c.getSuit() + "s!";
+                GameObject.FindObjectOfType<Game>().setHasPlayed(true);
+
+                //Return false if the player still needs to pick a button
+                if (c.getNumber() == "Jack" || c.getNumber() == "7")
+                    return "Missed button";
+                else
+                    return "Correct play";
+            }
+            //Player tried to play an incorrect card
+            else
+            {
+                punishPlayer("Wrong Card", displayText, player);
+                GameObject.FindObjectOfType<Game>().setHasPlayed(true);
+                return "Wrong Card";
+            }
+        }
+        //Player tried to play a card when it wasn't their turn
+        else
+        {
+            punishPlayer("Play", displayText, player);
+            return "Not your turn";
+        }
     }
 
     //8s change the direction of the turns
@@ -125,7 +162,7 @@ public static class GameActions
             }
             else if(c.getNumber() == "Jack")
             {
-                if (g.getCurrentTurn() == 2)
+                if (g.getCurrentTurn() != 4)
                 {
                     g.setHaveToPickButton(true);
                     g.setPickSuit(true);
@@ -134,7 +171,7 @@ public static class GameActions
             }
             else if (c.getNumber() == "7")
             {
-                if (g.getCurrentTurn() == 2)
+                if (g.getCurrentTurn() != 4)
                 {
                     g.setHaveToPickButton(true);
                     g.setPickPlayer(true);

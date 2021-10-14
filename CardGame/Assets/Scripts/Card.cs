@@ -231,5 +231,4 @@ public class Card : MonoBehaviour
     {
         cardObj.GetComponent<CardMovement>().moveCard(xPos, yPos);
     }
-
 }

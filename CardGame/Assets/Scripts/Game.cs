@@ -11,6 +11,10 @@ public class Game : MonoBehaviour
     private Player keith;
     private Player player;
 
+    //AIs
+    public DumbAI jessAI;
+    public DumbAI keithAI;
+
     // Card objects
     private Deck deck;
     private Discard discard;
@@ -26,6 +30,7 @@ public class Game : MonoBehaviour
     private int currentTurn;
     private bool takingTurn;
 
+    private float beginTimer;
     private float gameTimer;
     private int turnDirection;
     private bool hasPlayed;
@@ -54,6 +59,9 @@ public class Game : MonoBehaviour
 
     public Dropdown suitDropdown;
 
+    //Game state
+    public bool gameRunning;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -67,12 +75,17 @@ public class Game : MonoBehaviour
         currentTurn = 1;
         gameTimer = 0f;
         turnDirection = 1;
+        beginTimer = 6;
         hasPlayed = false;
         takingTurn = true;
         instantiated = false;
         haveToPickButton = false;
         pickPlayer = false;
         pickSuit = false;
+        gameRunning = true;
+
+        jessAI.initAI(jess, this);
+        keithAI.initAI(keith, this);
 
     /*
     spade = Instantiate(spade, new Vector3(100, 100, 0), Quaternion.identity);
@@ -84,64 +97,71 @@ public class Game : MonoBehaviour
 
     void Update()
     {
-       if (Input.GetMouseButtonDown(0))
-       {
-            if (GameActions.checkPlayerCard(player, currentTurn, discard, displayText, turnDirection))
-                hasPlayed = true;
-       }
-       if (takingTurn)
-       {
-            gameTimer += Time.deltaTime;
-
-            //NPCs take their turn
-            if (currentTurn == king.getTurn() && !hasPlayed)
-                hasPlayed = GameActions.npcCheckCard(king, displayText, discard, turnDirection, currentTurn);
-            if (currentTurn == jess.getTurn() && !hasPlayed)
-                hasPlayed = GameActions.npcCheckCard(jess, displayText, discard, turnDirection, currentTurn);
-            if (currentTurn == keith.getTurn() && !hasPlayed)
-                hasPlayed = GameActions.npcCheckCard(keith, displayText, discard, turnDirection, currentTurn);
-
-            //Each player has 10 seconds to take their turn.
-            //If they don't, they will be forced to draw a card and
-            //their turn will be skipped
-            if (gameTimer >= 10 && !hasPlayed && haveToPickButton)
+        if(beginTimer <= 0)
+        {
+            if (Input.GetMouseButtonDown(0))
             {
-                gameTimer = 0;
-
-                haveToPickButton = false;
-                pickPlayer = false;
-                pickSuit = false;
-
-                GameActions.forceDraw(currentTurn, king, jess, keith, player, displayText);
-                currentTurn = GameActions.setTurn(currentTurn, turnDirection);
-                hasPlayed = false;
-                if(currentTurn != player.getTurn())
-                {
-                    takingTurn = false;
-                    StartCoroutine(Wait());
-                }
+                if (GameActions.checkPlayerCard(player, currentTurn, discard, displayText, turnDirection))
+                    hasPlayed = true;
             }
-            //If the current player has played a correct card or drawn a card, 
-            //it moved to the next player's turn
-            else if (hasPlayed && !haveToPickButton)
+            if (takingTurn)
             {
-                gameTimer = 0;
+                gameTimer += Time.deltaTime;
 
-                if (discard.getTopCard().getNumber() == "Jack" && currentTurn != 2 
-                        && discard.getTopCard().getPlayedCorrectly())
-                    GameActions.npcChangeSuit(getCurrentNpc(), instantiated, discard);
-                currentTurn = GameActions.setTurn(currentTurn, turnDirection);
-                hasPlayed = false;
-                if (currentTurn != player.getTurn())
+                //NPCs take their turn
+                if (currentTurn == king.getTurn() && !hasPlayed)
+                    hasPlayed = GameActions.kingCheckCard(king, displayText, discard, turnDirection, currentTurn);
+                if (currentTurn == jess.getTurn() && !hasPlayed)
+                    jessAI.takeTurn();
+                if (currentTurn == keith.getTurn() && !hasPlayed)
+                    keithAI.takeTurn();
+
+                //Each player has 10 seconds to take their turn.
+                //If they don't, they will be forced to draw a card and
+                //their turn will be skipped
+                if (gameTimer >= 10 && !hasPlayed && haveToPickButton)
                 {
-                    takingTurn = false;
-                    instantiated = false;
+                    gameTimer = 0;
+
                     haveToPickButton = false;
                     pickPlayer = false;
                     pickSuit = false;
-                    StartCoroutine(Wait());
+
+                    GameActions.forceDraw(currentTurn, king, jess, keith, player, displayText);
+                    currentTurn = GameActions.setTurn(currentTurn, turnDirection);
+                    hasPlayed = false;
+                    if (currentTurn != player.getTurn())
+                    {
+                        takingTurn = false;
+                        StartCoroutine(Wait());
+                    }
+                }
+                //If the current player has played a correct card or drawn a card, 
+                //it moved to the next player's turn
+                else if (hasPlayed && !haveToPickButton)
+                {
+                    gameTimer = 0;
+
+                    if (discard.getTopCard().getNumber() == "Jack" && currentTurn != 2
+                            && discard.getTopCard().getPlayedCorrectly())
+                        GameActions.npcChangeSuit(getCurrentNpc(), instantiated, discard);
+                    currentTurn = GameActions.setTurn(currentTurn, turnDirection);
+                    hasPlayed = false;
+                    if (currentTurn != player.getTurn())
+                    {
+                        takingTurn = false;
+                        instantiated = false;
+                        haveToPickButton = false;
+                        pickPlayer = false;
+                        pickSuit = false;
+                        StartCoroutine(Wait());
+                    }
                 }
             }
+        }
+        else
+        {
+            beginTimer = beginTimer - 1 * Time.deltaTime;
         }
     }
 
