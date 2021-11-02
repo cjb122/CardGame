@@ -13,33 +13,141 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-09-22T00:00:12.125-04:00
-  initializedAtString: 2021-09-21T23:57:48.481-04:00
+  lastUpdatedAtString: 2021-10-17T23:08:25.622-04:00
+  initializedAtString: 2021-10-17T22:03:38.154-04:00
   entries:
-  - path: CardGame\.vs\CardGame\v16\.suo
-    fullPath: C:\Users\cjbar\CardGame\CardGame\.vs\CardGame\v16\.suo
-    projectPath: .vs\CardGame\v16\.suo
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: CardGame\Assembly-CSharp.csproj
     fullPath: C:\Users\cjbar\CardGame\CardGame\Assembly-CSharp.csproj
     projectPath: Assembly-CSharp.csproj
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: CardGame\Assets\Scenes\SampleScene.unity
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Scenes\SampleScene.unity
-    projectPath: Assets\Scenes\SampleScene.unity
+  - path: CardGame\Assets\Animation.meta
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Animation.meta
+    projectPath: Assets\Animation.meta
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: CardGame\Assets\Scripts\Card.cs
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Scripts\Card.cs
-    projectPath: Assets\Scripts\Card.cs
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Animation\Main Camera (1).controller
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Animation\Main Camera (1).controller
+    projectPath: Assets\Animation\Main Camera (1).controller
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Animation\Main Camera (1).controller.meta
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Animation\Main Camera (1).controller.meta
+    projectPath: Assets\Animation\Main Camera (1).controller.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Animation\NextText1.anim
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Animation\NextText1.anim
+    projectPath: Assets\Animation\NextText1.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Animation\NextText1.anim.meta
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Animation\NextText1.anim.meta
+    projectPath: Assets\Animation\NextText1.anim.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Animation\NextText2.anim
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Animation\NextText2.anim
+    projectPath: Assets\Animation\NextText2.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Animation\NextText2.anim.meta
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Animation\NextText2.anim.meta
+    projectPath: Assets\Animation\NextText2.anim.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Animation\NextText3.anim
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Animation\NextText3.anim
+    projectPath: Assets\Animation\NextText3.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Animation\NextText3.anim.meta
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Animation\NextText3.anim.meta
+    projectPath: Assets\Animation\NextText3.anim.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Audio.meta
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Audio.meta
+    projectPath: Assets\Audio.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Audio\499032__16fthumaf__13-fire-in-fireplace.wav.mp3
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Audio\499032__16fthumaf__13-fire-in-fireplace.wav.mp3
+    projectPath: Assets\Audio\499032__16fthumaf__13-fire-in-fireplace.wav.mp3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Audio\499032__16fthumaf__13-fire-in-fireplace.wav.mp3.meta
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Audio\499032__16fthumaf__13-fire-in-fireplace.wav.mp3.meta
+    projectPath: Assets\Audio\499032__16fthumaf__13-fire-in-fireplace.wav.mp3.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Fonts.meta
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Fonts.meta
+    projectPath: Assets\Fonts.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Fonts\Liberta.ttf
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Fonts\Liberta.ttf
+    projectPath: Assets\Fonts\Liberta.ttf
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Fonts\Liberta.ttf.meta
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Fonts\Liberta.ttf.meta
+    projectPath: Assets\Fonts\Liberta.ttf.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Scenes\Intro.unity
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Scenes\Intro.unity
+    projectPath: Assets\Scenes\Intro.unity
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Scenes\Intro.unity.meta
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Scenes\Intro.unity.meta
+    projectPath: Assets\Scenes\Intro.unity.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Scenes\MainTitle.unity
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Scenes\MainTitle.unity
+    projectPath: Assets\Scenes\MainTitle.unity
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Scenes\MainTitle.unity.meta
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Scenes\MainTitle.unity.meta
+    projectPath: Assets\Scenes\MainTitle.unity.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Scripts\ButtonScripts.cs
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Scripts\ButtonScripts.cs
+    projectPath: Assets\Scripts\ButtonScripts.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Scripts\ButtonScripts.cs.meta
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Scripts\ButtonScripts.cs.meta
+    projectPath: Assets\Scripts\ButtonScripts.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: CardGame\Assets\Scripts\CardMovement.cs
     fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Scripts\CardMovement.cs
     projectPath: Assets\Scripts\CardMovement.cs
@@ -64,18 +172,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: CardGame\Assets\Scripts\Game.cs
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Scripts\Game.cs
-    projectPath: Assets\Scripts\Game.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: CardGame\Assets\Scripts\GameActions.cs
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Scripts\GameActions.cs
-    projectPath: Assets\Scripts\GameActions.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: CardGame\Assets\Scripts\SmartAI.cs
     fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Scripts\SmartAI.cs
     projectPath: Assets\Scripts\SmartAI.cs
@@ -88,15 +184,81 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: CardGame\Assets\Scripts\StateObj.cs
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Scripts\StateObj.cs
+    projectPath: Assets\Scripts\StateObj.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Scripts\StateObj.cs.meta
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Scripts\StateObj.cs.meta
+    projectPath: Assets\Scripts\StateObj.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Sprites\Ember.png
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Sprites\Ember.png
+    projectPath: Assets\Sprites\Ember.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Sprites\Ember.png.meta
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Sprites\Ember.png.meta
+    projectPath: Assets\Sprites\Ember.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Sprites\TitleAboutBackground.png
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Sprites\TitleAboutBackground.png
+    projectPath: Assets\Sprites\TitleAboutBackground.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Assets\Sprites\TitleAboutBackground.png.meta
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Assets\Sprites\TitleAboutBackground.png.meta
+    projectPath: Assets\Sprites\TitleAboutBackground.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: CardGame\Library\ArtifactDB
     fullPath: C:\Users\cjbar\CardGame\CardGame\Library\ArtifactDB
     projectPath: Library\ArtifactDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: CardGame\Library\Artifacts\0e\0eee67d1fb4d230afd3745a33892f5f2
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\0e\0eee67d1fb4d230afd3745a33892f5f2
-    projectPath: Library\Artifacts\0e\0eee67d1fb4d230afd3745a33892f5f2
+  - path: CardGame\Library\Artifacts\00\00542fb275f6f40d504f4b7e8525b781
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\00\00542fb275f6f40d504f4b7e8525b781
+    projectPath: Library\Artifacts\00\00542fb275f6f40d504f4b7e8525b781
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\03\03d21ba76fa48a68b05d3fa059760630
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\03\03d21ba76fa48a68b05d3fa059760630
+    projectPath: Library\Artifacts\03\03d21ba76fa48a68b05d3fa059760630
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\09\09553674993688ac49404b1d8d33a6bc
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\09\09553674993688ac49404b1d8d33a6bc
+    projectPath: Library\Artifacts\09\09553674993688ac49404b1d8d33a6bc
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\09\09e0b8e69b21432da4978c919cc5f16c
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\09\09e0b8e69b21432da4978c919cc5f16c
+    projectPath: Library\Artifacts\09\09e0b8e69b21432da4978c919cc5f16c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\0a\0a5b8c3eef04eb207b68909555a48e1d
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\0a\0a5b8c3eef04eb207b68909555a48e1d
+    projectPath: Library\Artifacts\0a\0a5b8c3eef04eb207b68909555a48e1d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\0e\0edad5cc8f3365e1020f627e8e96a59f
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\0e\0edad5cc8f3365e1020f627e8e96a59f
+    projectPath: Library\Artifacts\0e\0edad5cc8f3365e1020f627e8e96a59f
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -106,27 +268,129 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: CardGame\Library\Artifacts\13\13d8b7415b6856c93faa6adc2a2ce29a
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\13\13d8b7415b6856c93faa6adc2a2ce29a
-    projectPath: Library\Artifacts\13\13d8b7415b6856c93faa6adc2a2ce29a
+  - path: CardGame\Library\Artifacts\12\12b99b133d840394a4baa58797744f91
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\12\12b99b133d840394a4baa58797744f91
+    projectPath: Library\Artifacts\12\12b99b133d840394a4baa58797744f91
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: CardGame\Library\Artifacts\16\161a3ead813dd962d672b792b83b7ec6
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\16\161a3ead813dd962d672b792b83b7ec6
-    projectPath: Library\Artifacts\16\161a3ead813dd962d672b792b83b7ec6
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\13\135224d06b727af5e014efccf1371301
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\13\135224d06b727af5e014efccf1371301
+    projectPath: Library\Artifacts\13\135224d06b727af5e014efccf1371301
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\14\1422b16e7a62cbe800530e3bc8ba306e
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\14\1422b16e7a62cbe800530e3bc8ba306e
+    projectPath: Library\Artifacts\14\1422b16e7a62cbe800530e3bc8ba306e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\15\1548254b941b84765858213953c054ff
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\15\1548254b941b84765858213953c054ff
+    projectPath: Library\Artifacts\15\1548254b941b84765858213953c054ff
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\1c\1c0d13308f1f481bafaca79fec00408a
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\1c\1c0d13308f1f481bafaca79fec00408a
+    projectPath: Library\Artifacts\1c\1c0d13308f1f481bafaca79fec00408a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\1c\1c168177d7382847c662b1c439b6d9f1
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\1c\1c168177d7382847c662b1c439b6d9f1
+    projectPath: Library\Artifacts\1c\1c168177d7382847c662b1c439b6d9f1
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\1e\1e97aec1b6f003bc320bf52d25047874
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\1e\1e97aec1b6f003bc320bf52d25047874
+    projectPath: Library\Artifacts\1e\1e97aec1b6f003bc320bf52d25047874
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: CardGame\Library\Artifacts\1f\1f362354b7f11e3cc4aeb866eea8788d
     fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\1f\1f362354b7f11e3cc4aeb866eea8788d
     projectPath: Library\Artifacts\1f\1f362354b7f11e3cc4aeb866eea8788d
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\20\20e37928ed8c9f2554664373b7ff07dd
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\20\20e37928ed8c9f2554664373b7ff07dd
+    projectPath: Library\Artifacts\20\20e37928ed8c9f2554664373b7ff07dd
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\21\214fd285023cb18d4d20990bde78b157
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\21\214fd285023cb18d4d20990bde78b157
+    projectPath: Library\Artifacts\21\214fd285023cb18d4d20990bde78b157
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\22\220a2634be97a139a9d393d4743fb06b
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\22\220a2634be97a139a9d393d4743fb06b
+    projectPath: Library\Artifacts\22\220a2634be97a139a9d393d4743fb06b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\22\229153c1e7545878ab091e966a126a13
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\22\229153c1e7545878ab091e966a126a13
+    projectPath: Library\Artifacts\22\229153c1e7545878ab091e966a126a13
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\22\22a2992770d5d43ee0bcd73a27c97187
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\22\22a2992770d5d43ee0bcd73a27c97187
+    projectPath: Library\Artifacts\22\22a2992770d5d43ee0bcd73a27c97187
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\22\22b5f4c4195f6505f1b7995422b6389f
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\22\22b5f4c4195f6505f1b7995422b6389f
+    projectPath: Library\Artifacts\22\22b5f4c4195f6505f1b7995422b6389f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\23\23732fdd67b4d47442a473a77417ca36
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\23\23732fdd67b4d47442a473a77417ca36
+    projectPath: Library\Artifacts\23\23732fdd67b4d47442a473a77417ca36
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\2c\2c397e1d5d8e6fd8f50ef2f6b4c34c54
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\2c\2c397e1d5d8e6fd8f50ef2f6b4c34c54
+    projectPath: Library\Artifacts\2c\2c397e1d5d8e6fd8f50ef2f6b4c34c54
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\2d\2d5fedfdcfc51e6144961b3356bed092
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\2d\2d5fedfdcfc51e6144961b3356bed092
+    projectPath: Library\Artifacts\2d\2d5fedfdcfc51e6144961b3356bed092
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\2f\2f1f178ed8eee1bb964aac158186d4b6
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\2f\2f1f178ed8eee1bb964aac158186d4b6
+    projectPath: Library\Artifacts\2f\2f1f178ed8eee1bb964aac158186d4b6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: CardGame\Library\Artifacts\30\3002ac2c751c1c5f766c2176cd7dd6ca
     fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\30\3002ac2c751c1c5f766c2176cd7dd6ca
     projectPath: Library\Artifacts\30\3002ac2c751c1c5f766c2176cd7dd6ca
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\33\33e41ef12289d38bd55167dbe7b6352d
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\33\33e41ef12289d38bd55167dbe7b6352d
+    projectPath: Library\Artifacts\33\33e41ef12289d38bd55167dbe7b6352d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\34\34144195a6228f135c60909698ddba8b
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\34\34144195a6228f135c60909698ddba8b
+    projectPath: Library\Artifacts\34\34144195a6228f135c60909698ddba8b
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -142,21 +406,81 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: CardGame\Library\Artifacts\40\40801fb499adda82725e3d609b9851e4
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\40\40801fb499adda82725e3d609b9851e4
-    projectPath: Library\Artifacts\40\40801fb499adda82725e3d609b9851e4
+  - path: CardGame\Library\Artifacts\36\36ea689b46370cc09a354cc224976e74
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\36\36ea689b46370cc09a354cc224976e74
+    projectPath: Library\Artifacts\36\36ea689b46370cc09a354cc224976e74
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\39\396350d9977140e09221749847133be2
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\39\396350d9977140e09221749847133be2
+    projectPath: Library\Artifacts\39\396350d9977140e09221749847133be2
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\3a\3a3a62602a33ea4ff3e706f01c1407e4
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\3a\3a3a62602a33ea4ff3e706f01c1407e4
+    projectPath: Library\Artifacts\3a\3a3a62602a33ea4ff3e706f01c1407e4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\3e\3ede2b068b11ea34dccfe535bb09712f
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\3e\3ede2b068b11ea34dccfe535bb09712f
+    projectPath: Library\Artifacts\3e\3ede2b068b11ea34dccfe535bb09712f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\40\40c5584b04b24b4e94327938cd7bd41b
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\40\40c5584b04b24b4e94327938cd7bd41b
+    projectPath: Library\Artifacts\40\40c5584b04b24b4e94327938cd7bd41b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\43\4329055ecdf59f95e13e2fa54f7ef56d
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\43\4329055ecdf59f95e13e2fa54f7ef56d
+    projectPath: Library\Artifacts\43\4329055ecdf59f95e13e2fa54f7ef56d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\43\43e44cb031c822f452387f6445c9da56
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\43\43e44cb031c822f452387f6445c9da56
+    projectPath: Library\Artifacts\43\43e44cb031c822f452387f6445c9da56
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\44\448396840732ff8426d6d90e83fd74b8
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\44\448396840732ff8426d6d90e83fd74b8
+    projectPath: Library\Artifacts\44\448396840732ff8426d6d90e83fd74b8
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: CardGame\Library\Artifacts\48\487a9eff5c0825be073a5c07cc2c12e6
     fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\48\487a9eff5c0825be073a5c07cc2c12e6
     projectPath: Library\Artifacts\48\487a9eff5c0825be073a5c07cc2c12e6
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\48\48d2a9e79f3a9b634af4450e8131b92a
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\48\48d2a9e79f3a9b634af4450e8131b92a
+    projectPath: Library\Artifacts\48\48d2a9e79f3a9b634af4450e8131b92a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\49\499b78b27b325e250409da599bc2a3e2
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\49\499b78b27b325e250409da599bc2a3e2
+    projectPath: Library\Artifacts\49\499b78b27b325e250409da599bc2a3e2
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: CardGame\Library\Artifacts\4c\4c2f66d1bf8411d1b211c2ea9e39ba74
     fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\4c\4c2f66d1bf8411d1b211c2ea9e39ba74
     projectPath: Library\Artifacts\4c\4c2f66d1bf8411d1b211c2ea9e39ba74
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\4e\4e7596e93cfee6395802ca42879bd34b
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\4e\4e7596e93cfee6395802ca42879bd34b
+    projectPath: Library\Artifacts\4e\4e7596e93cfee6395802ca42879bd34b
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -172,63 +496,117 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: CardGame\Library\Artifacts\54\54bd3fce42cd51fef56d07414bbf35d2
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\54\54bd3fce42cd51fef56d07414bbf35d2
-    projectPath: Library\Artifacts\54\54bd3fce42cd51fef56d07414bbf35d2
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: CardGame\Library\Artifacts\5e\5e9f302e55d9e9a4d5c95bb8e3d4ffa8
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\5e\5e9f302e55d9e9a4d5c95bb8e3d4ffa8
-    projectPath: Library\Artifacts\5e\5e9f302e55d9e9a4d5c95bb8e3d4ffa8
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: CardGame\Library\Artifacts\7d\7d41a081409f79cde75db55b64fabe73
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\7d\7d41a081409f79cde75db55b64fabe73
-    projectPath: Library\Artifacts\7d\7d41a081409f79cde75db55b64fabe73
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: CardGame\Library\Artifacts\7e\7e8532aa31f07b4e17216804d9eae9c9
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\7e\7e8532aa31f07b4e17216804d9eae9c9
-    projectPath: Library\Artifacts\7e\7e8532aa31f07b4e17216804d9eae9c9
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: CardGame\Library\Artifacts\7f\7f41359016996573702c5938d8be7d0e
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\7f\7f41359016996573702c5938d8be7d0e
-    projectPath: Library\Artifacts\7f\7f41359016996573702c5938d8be7d0e
+  - path: CardGame\Library\Artifacts\57\5726d7df7f22d4cc9dbbd380b6c07273
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\57\5726d7df7f22d4cc9dbbd380b6c07273
+    projectPath: Library\Artifacts\57\5726d7df7f22d4cc9dbbd380b6c07273
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: CardGame\Library\Artifacts\84\84702f87d6c8ae7c3c209b59352fffc4
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\84\84702f87d6c8ae7c3c209b59352fffc4
-    projectPath: Library\Artifacts\84\84702f87d6c8ae7c3c209b59352fffc4
+  - path: CardGame\Library\Artifacts\58\58aca17732ea222cf133edf84fe0bdeb
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\58\58aca17732ea222cf133edf84fe0bdeb
+    projectPath: Library\Artifacts\58\58aca17732ea222cf133edf84fe0bdeb
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: CardGame\Library\Artifacts\8c\8c0757a1e9c714d74b8068cb0804b315
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\8c\8c0757a1e9c714d74b8068cb0804b315
-    projectPath: Library\Artifacts\8c\8c0757a1e9c714d74b8068cb0804b315
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\5a\5a479f0ccef90134719ac7b1f7159f9a
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\5a\5a479f0ccef90134719ac7b1f7159f9a
+    projectPath: Library\Artifacts\5a\5a479f0ccef90134719ac7b1f7159f9a
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: CardGame\Library\Artifacts\95\953ae5f63fd3e131dd9ab84971ab1734
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\95\953ae5f63fd3e131dd9ab84971ab1734
-    projectPath: Library\Artifacts\95\953ae5f63fd3e131dd9ab84971ab1734
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\5f\5f6fa8c832b4257e1223f3eb52c7e7ff
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\5f\5f6fa8c832b4257e1223f3eb52c7e7ff
+    projectPath: Library\Artifacts\5f\5f6fa8c832b4257e1223f3eb52c7e7ff
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\5f\5fd38227c565323f1387e913fe07bc0f
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\5f\5fd38227c565323f1387e913fe07bc0f
+    projectPath: Library\Artifacts\5f\5fd38227c565323f1387e913fe07bc0f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\60\60b4fa04b4c7dc1e8d23d57e49320cdc
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\60\60b4fa04b4c7dc1e8d23d57e49320cdc
+    projectPath: Library\Artifacts\60\60b4fa04b4c7dc1e8d23d57e49320cdc
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\61\61afd34e9c1937346069345d70814560
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\61\61afd34e9c1937346069345d70814560
+    projectPath: Library\Artifacts\61\61afd34e9c1937346069345d70814560
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\65\656c1ef2c9f6d72243926b3a3ca3ec18
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\65\656c1ef2c9f6d72243926b3a3ca3ec18
+    projectPath: Library\Artifacts\65\656c1ef2c9f6d72243926b3a3ca3ec18
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\69\69c8caca3e00b2b870640407dc6e5a4a
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\69\69c8caca3e00b2b870640407dc6e5a4a
+    projectPath: Library\Artifacts\69\69c8caca3e00b2b870640407dc6e5a4a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\71\71f2a189c8b100f8ff629386d9e08ee8
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\71\71f2a189c8b100f8ff629386d9e08ee8
+    projectPath: Library\Artifacts\71\71f2a189c8b100f8ff629386d9e08ee8
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\72\72ed05e1fa6c73b9d2048f1ee4aecb15
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\72\72ed05e1fa6c73b9d2048f1ee4aecb15
+    projectPath: Library\Artifacts\72\72ed05e1fa6c73b9d2048f1ee4aecb15
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\73\73f2f592e3c7a79c00960d3bff2c6ff9
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\73\73f2f592e3c7a79c00960d3bff2c6ff9
+    projectPath: Library\Artifacts\73\73f2f592e3c7a79c00960d3bff2c6ff9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\75\7587a03bd85ebb1942395c2a1301c8c4
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\75\7587a03bd85ebb1942395c2a1301c8c4
+    projectPath: Library\Artifacts\75\7587a03bd85ebb1942395c2a1301c8c4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\77\77d522bd7cbb0d2e19a935450537b156
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\77\77d522bd7cbb0d2e19a935450537b156
+    projectPath: Library\Artifacts\77\77d522bd7cbb0d2e19a935450537b156
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\7f\7f7f61a69fce7a76d92c04436a4b7fdd
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\7f\7f7f61a69fce7a76d92c04436a4b7fdd
+    projectPath: Library\Artifacts\7f\7f7f61a69fce7a76d92c04436a4b7fdd
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\85\85c8f345dd760b268841047282b42184
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\85\85c8f345dd760b268841047282b42184
+    projectPath: Library\Artifacts\85\85c8f345dd760b268841047282b42184
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\89\899c40556ac0d22bab79a509c5a41a68
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\89\899c40556ac0d22bab79a509c5a41a68
+    projectPath: Library\Artifacts\89\899c40556ac0d22bab79a509c5a41a68
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: CardGame\Library\Artifacts\95\95bc7f44a20310e8f35b5c9eb543f646
     fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\95\95bc7f44a20310e8f35b5c9eb543f646
     projectPath: Library\Artifacts\95\95bc7f44a20310e8f35b5c9eb543f646
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: CardGame\Library\Artifacts\96\96cd8b1c11be66026574f11d263dc33c
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\96\96cd8b1c11be66026574f11d263dc33c
-    projectPath: Library\Artifacts\96\96cd8b1c11be66026574f11d263dc33c
+  - path: CardGame\Library\Artifacts\98\981175bf345ca1935e840825aa615d6d
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\98\981175bf345ca1935e840825aa615d6d
+    projectPath: Library\Artifacts\98\981175bf345ca1935e840825aa615d6d
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -238,9 +616,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: CardGame\Library\Artifacts\9e\9edcb3e1c2127ae3929e91fd93c14403
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\9e\9edcb3e1c2127ae3929e91fd93c14403
-    projectPath: Library\Artifacts\9e\9edcb3e1c2127ae3929e91fd93c14403
+  - path: CardGame\Library\Artifacts\9a\9ad98a2d360541ebd2eacab7376c853d
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\9a\9ad98a2d360541ebd2eacab7376c853d
+    projectPath: Library\Artifacts\9a\9ad98a2d360541ebd2eacab7376c853d
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -250,21 +628,117 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: CardGame\Library\Artifacts\a1\a1b761e8743adc4db2bb5bcfe5009e8d
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\a1\a1b761e8743adc4db2bb5bcfe5009e8d
-    projectPath: Library\Artifacts\a1\a1b761e8743adc4db2bb5bcfe5009e8d
+  - path: CardGame\Library\Artifacts\a5\a514ad9404476b5c689fa1d471fdda26
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\a5\a514ad9404476b5c689fa1d471fdda26
+    projectPath: Library\Artifacts\a5\a514ad9404476b5c689fa1d471fdda26
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: CardGame\Library\Artifacts\a9\a9a9f8a28c50ce821e2dda27dad9dca3
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\a9\a9a9f8a28c50ce821e2dda27dad9dca3
-    projectPath: Library\Artifacts\a9\a9a9f8a28c50ce821e2dda27dad9dca3
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\a8\a8f1ef55732812f6ce46a4853a51f974
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\a8\a8f1ef55732812f6ce46a4853a51f974
+    projectPath: Library\Artifacts\a8\a8f1ef55732812f6ce46a4853a51f974
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\a8\a8f3b9a54607bf4fa22dda231751a8f3
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\a8\a8f3b9a54607bf4fa22dda231751a8f3
+    projectPath: Library\Artifacts\a8\a8f3b9a54607bf4fa22dda231751a8f3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\aa\aada1c4231bc3562fa0f2153e6685795
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\aa\aada1c4231bc3562fa0f2153e6685795
+    projectPath: Library\Artifacts\aa\aada1c4231bc3562fa0f2153e6685795
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\aa\aaef73a990fc07148e4f60b2dd600870
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\aa\aaef73a990fc07148e4f60b2dd600870
+    projectPath: Library\Artifacts\aa\aaef73a990fc07148e4f60b2dd600870
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\ab\ab1cbb0a641da143b15529dc7c7b62be
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\ab\ab1cbb0a641da143b15529dc7c7b62be
+    projectPath: Library\Artifacts\ab\ab1cbb0a641da143b15529dc7c7b62be
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\ab\abe8f69c9cd6b11a333a43f016fbaddd
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\ab\abe8f69c9cd6b11a333a43f016fbaddd
+    projectPath: Library\Artifacts\ab\abe8f69c9cd6b11a333a43f016fbaddd
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\ad\ad8820bef2595dc9c9f89eb234e651be
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\ad\ad8820bef2595dc9c9f89eb234e651be
+    projectPath: Library\Artifacts\ad\ad8820bef2595dc9c9f89eb234e651be
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\ad\adcccd8841e04eeb1b6d72d8c4749c1a
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\ad\adcccd8841e04eeb1b6d72d8c4749c1a
+    projectPath: Library\Artifacts\ad\adcccd8841e04eeb1b6d72d8c4749c1a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\ad\adecf26bb15adea3c4deec8ff892ed7c
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\ad\adecf26bb15adea3c4deec8ff892ed7c
+    projectPath: Library\Artifacts\ad\adecf26bb15adea3c4deec8ff892ed7c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\af\af17e2df88b50ae52d288186d81ef5ad
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\af\af17e2df88b50ae52d288186d81ef5ad
+    projectPath: Library\Artifacts\af\af17e2df88b50ae52d288186d81ef5ad
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\b4\b4a2eb91c8aff75c5ec83c3ea365a3a9
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\b4\b4a2eb91c8aff75c5ec83c3ea365a3a9
+    projectPath: Library\Artifacts\b4\b4a2eb91c8aff75c5ec83c3ea365a3a9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\b4\b4cb6be3f80d8ac558ff5804e3e18205
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\b4\b4cb6be3f80d8ac558ff5804e3e18205
+    projectPath: Library\Artifacts\b4\b4cb6be3f80d8ac558ff5804e3e18205
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: CardGame\Library\Artifacts\b5\b5284dde98c7c4b4886719ca3a30cc5c
     fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\b5\b5284dde98c7c4b4886719ca3a30cc5c
     projectPath: Library\Artifacts\b5\b5284dde98c7c4b4886719ca3a30cc5c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\b5\b58cd93f3d59166a3f83b2d86c54b51b
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\b5\b58cd93f3d59166a3f83b2d86c54b51b
+    projectPath: Library\Artifacts\b5\b58cd93f3d59166a3f83b2d86c54b51b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\bb\bbd67d5af65f56d926abba024c4474c2
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\bb\bbd67d5af65f56d926abba024c4474c2
+    projectPath: Library\Artifacts\bb\bbd67d5af65f56d926abba024c4474c2
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\c1\c1e626b5d606f00edcea004a2b953f79
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\c1\c1e626b5d606f00edcea004a2b953f79
+    projectPath: Library\Artifacts\c1\c1e626b5d606f00edcea004a2b953f79
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\c3\c314c8bd2561e1dddae4eb6ce1243685
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\c3\c314c8bd2561e1dddae4eb6ce1243685
+    projectPath: Library\Artifacts\c3\c314c8bd2561e1dddae4eb6ce1243685
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\c3\c32bbed899f2bd2c5ebfaefb4730f4d0
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\c3\c32bbed899f2bd2c5ebfaefb4730f4d0
+    projectPath: Library\Artifacts\c3\c32bbed899f2bd2c5ebfaefb4730f4d0
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -274,48 +748,108 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\c6\c6b12d3ac0bbd545c564ff6365bab5f7
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\c6\c6b12d3ac0bbd545c564ff6365bab5f7
+    projectPath: Library\Artifacts\c6\c6b12d3ac0bbd545c564ff6365bab5f7
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\ca\cae566f9d9cfb5c0574b651c95a94bfd
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\ca\cae566f9d9cfb5c0574b651c95a94bfd
+    projectPath: Library\Artifacts\ca\cae566f9d9cfb5c0574b651c95a94bfd
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: CardGame\Library\Artifacts\cb\cb493d4ec0b94e0ac6a6e61eb13b7ca5
     fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\cb\cb493d4ec0b94e0ac6a6e61eb13b7ca5
     projectPath: Library\Artifacts\cb\cb493d4ec0b94e0ac6a6e61eb13b7ca5
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: CardGame\Library\Artifacts\cc\cc4eef1f69d612b807fe9c8f1daa7d17
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\cc\cc4eef1f69d612b807fe9c8f1daa7d17
-    projectPath: Library\Artifacts\cc\cc4eef1f69d612b807fe9c8f1daa7d17
+  - path: CardGame\Library\Artifacts\ce\ced3779c29e3efd2a4958be184b65ef6
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\ce\ced3779c29e3efd2a4958be184b65ef6
+    projectPath: Library\Artifacts\ce\ced3779c29e3efd2a4958be184b65ef6
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: CardGame\Library\Artifacts\cd\cd23868366d3e1f67819d894c7f91717
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\cd\cd23868366d3e1f67819d894c7f91717
-    projectPath: Library\Artifacts\cd\cd23868366d3e1f67819d894c7f91717
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: CardGame\Library\Artifacts\cf\cf75d0140469dc93e31f02cf23b4045c
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\cf\cf75d0140469dc93e31f02cf23b4045c
-    projectPath: Library\Artifacts\cf\cf75d0140469dc93e31f02cf23b4045c
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
   - path: CardGame\Library\Artifacts\d0\d0c7c76aeca6ef1ed473b0955a8cea83
     fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\d0\d0c7c76aeca6ef1ed473b0955a8cea83
     projectPath: Library\Artifacts\d0\d0c7c76aeca6ef1ed473b0955a8cea83
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: CardGame\Library\Artifacts\e3\e3144236834c87eefadb7e730d127a49
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\e3\e3144236834c87eefadb7e730d127a49
-    projectPath: Library\Artifacts\e3\e3144236834c87eefadb7e730d127a49
+  - path: CardGame\Library\Artifacts\d2\d27cfa73736a80c384c002025c784a39
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\d2\d27cfa73736a80c384c002025c784a39
+    projectPath: Library\Artifacts\d2\d27cfa73736a80c384c002025c784a39
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: CardGame\Library\Artifacts\f6\f665263c9278b0f6af5e7511b3dbeb33
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\f6\f665263c9278b0f6af5e7511b3dbeb33
-    projectPath: Library\Artifacts\f6\f665263c9278b0f6af5e7511b3dbeb33
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\d5\d554078e16a0a5a26573de09c13f17f2
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\d5\d554078e16a0a5a26573de09c13f17f2
+    projectPath: Library\Artifacts\d5\d554078e16a0a5a26573de09c13f17f2
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\dc\dc4084c509d89b9eebeea0fde3260474
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\dc\dc4084c509d89b9eebeea0fde3260474
+    projectPath: Library\Artifacts\dc\dc4084c509d89b9eebeea0fde3260474
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\e0\e07a7b289a5b39ebee09994c66fda899
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\e0\e07a7b289a5b39ebee09994c66fda899
+    projectPath: Library\Artifacts\e0\e07a7b289a5b39ebee09994c66fda899
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\e3\e3d48f9a15467ca79b21e70787a467d5
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\e3\e3d48f9a15467ca79b21e70787a467d5
+    projectPath: Library\Artifacts\e3\e3d48f9a15467ca79b21e70787a467d5
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\e6\e68c7e27c409982583a4c1e566fd6d2f
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\e6\e68c7e27c409982583a4c1e566fd6d2f
+    projectPath: Library\Artifacts\e6\e68c7e27c409982583a4c1e566fd6d2f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\e8\e808680d317cdcd0c89282b8fc6f744e
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\e8\e808680d317cdcd0c89282b8fc6f744e
+    projectPath: Library\Artifacts\e8\e808680d317cdcd0c89282b8fc6f744e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\e8\e87272a24ad6cf0b20717c148f7be15a
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\e8\e87272a24ad6cf0b20717c148f7be15a
+    projectPath: Library\Artifacts\e8\e87272a24ad6cf0b20717c148f7be15a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\ef\ef095a7de564028afa151b1b8f9cfcb7
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\ef\ef095a7de564028afa151b1b8f9cfcb7
+    projectPath: Library\Artifacts\ef\ef095a7de564028afa151b1b8f9cfcb7
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\f0\f00c5f6333f73679d35c05d4edcabe57
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\f0\f00c5f6333f73679d35c05d4edcabe57
+    projectPath: Library\Artifacts\f0\f00c5f6333f73679d35c05d4edcabe57
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\f6\f69970750b93ab047176a05e8408f9d8
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\f6\f69970750b93ab047176a05e8408f9d8
+    projectPath: Library\Artifacts\f6\f69970750b93ab047176a05e8408f9d8
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\f6\f6ab7e66214a716cf6320259cbc00d2f
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\f6\f6ab7e66214a716cf6320259cbc00d2f
+    projectPath: Library\Artifacts\f6\f6ab7e66214a716cf6320259cbc00d2f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: CardGame\Library\Artifacts\f7\f76b2610fffe7ae2bd8515c6bf222198
     fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\f7\f76b2610fffe7ae2bd8515c6bf222198
     projectPath: Library\Artifacts\f7\f76b2610fffe7ae2bd8515c6bf222198
@@ -328,18 +862,24 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: CardGame\Library\Artifacts\f9\f9fc35fe2d972f69da19e3fdbce21cd6
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\f9\f9fc35fe2d972f69da19e3fdbce21cd6
-    projectPath: Library\Artifacts\f9\f9fc35fe2d972f69da19e3fdbce21cd6
+  - path: CardGame\Library\Artifacts\fa\fa86f3aacbc302817fe23bf7ba5cbbd8
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\fa\fa86f3aacbc302817fe23bf7ba5cbbd8
+    projectPath: Library\Artifacts\fa\fa86f3aacbc302817fe23bf7ba5cbbd8
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: CardGame\Library\Artifacts\fc\fca01992aa1bc3d81d45a5caf3f92d38
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\fc\fca01992aa1bc3d81d45a5caf3f92d38
-    projectPath: Library\Artifacts\fc\fca01992aa1bc3d81d45a5caf3f92d38
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\fb\fb2095e795fc662e2ba0b8346a8a0b14
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\fb\fb2095e795fc662e2ba0b8346a8a0b14
+    projectPath: Library\Artifacts\fb\fb2095e795fc662e2ba0b8346a8a0b14
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\fc\fccfacfb25f1435b7aeb981a925dc612
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\fc\fccfacfb25f1435b7aeb981a925dc612
+    projectPath: Library\Artifacts\fc\fccfacfb25f1435b7aeb981a925dc612
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: CardGame\Library\Artifacts\fd\fdaae032edf4137502923680aa619c1d
     fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\fd\fdaae032edf4137502923680aa619c1d
     projectPath: Library\Artifacts\fd\fdaae032edf4137502923680aa619c1d
@@ -349,6 +889,12 @@ MonoBehaviour:
   - path: CardGame\Library\Artifacts\ff\ff62247e33590b59f0ba6461ea1e0494
     fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\ff\ff62247e33590b59f0ba6461ea1e0494
     projectPath: Library\Artifacts\ff\ff62247e33590b59f0ba6461ea1e0494
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\Artifacts\ff\ffbdc803b3bd00703197ce0825105525
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\Artifacts\ff\ffbdc803b3bd00703197ce0825105525
+    projectPath: Library\Artifacts\ff\ffbdc803b3bd00703197ce0825105525
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -454,6 +1000,12 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: CardGame\Library\expandedItems
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\expandedItems
+    projectPath: Library\expandedItems
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: CardGame\Library\gfu\cache\branches.yaml
     fullPath: C:\Users\cjbar\CardGame\CardGame\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
@@ -490,6 +1042,18 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: CardGame\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CardGame\Library\LastSceneManagerSetup.txt
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\LastSceneManagerSetup.txt
+    projectPath: Library\LastSceneManagerSetup.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: CardGame\Library\SceneVisibilityState.asset
     fullPath: C:\Users\cjbar\CardGame\CardGame\Library\SceneVisibilityState.asset
     projectPath: Library\SceneVisibilityState.asset
@@ -514,6 +1078,84 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: CardGame\Library\ShaderCache\2\2554293c3b7be98f53515374e5990cdf.bin
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\ShaderCache\2\2554293c3b7be98f53515374e5990cdf.bin
+    projectPath: Library\ShaderCache\2\2554293c3b7be98f53515374e5990cdf.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\ShaderCache\5\50717d10279fc5159f4ee0ec85edd911.bin
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\ShaderCache\5\50717d10279fc5159f4ee0ec85edd911.bin
+    projectPath: Library\ShaderCache\5\50717d10279fc5159f4ee0ec85edd911.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\ShaderCache\5\5229193bfa2130f3a2dc6f3c64c65aca.bin
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\ShaderCache\5\5229193bfa2130f3a2dc6f3c64c65aca.bin
+    projectPath: Library\ShaderCache\5\5229193bfa2130f3a2dc6f3c64c65aca.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\ShaderCache\6\6aa10539ae31727902fa82df840c5b19.bin
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\ShaderCache\6\6aa10539ae31727902fa82df840c5b19.bin
+    projectPath: Library\ShaderCache\6\6aa10539ae31727902fa82df840c5b19.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\ShaderCache\7\78860be2a7b9e563157f1a5feb063f60.bin
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\ShaderCache\7\78860be2a7b9e563157f1a5feb063f60.bin
+    projectPath: Library\ShaderCache\7\78860be2a7b9e563157f1a5feb063f60.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\ShaderCache\8\8ada40ed4b0761919b4a86496ed7ac24.bin
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\ShaderCache\8\8ada40ed4b0761919b4a86496ed7ac24.bin
+    projectPath: Library\ShaderCache\8\8ada40ed4b0761919b4a86496ed7ac24.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\ShaderCache\8\8c1c74993cd268f1091421ea2f5eea5a.bin
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\ShaderCache\8\8c1c74993cd268f1091421ea2f5eea5a.bin
+    projectPath: Library\ShaderCache\8\8c1c74993cd268f1091421ea2f5eea5a.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\ShaderCache\a\a771df8aafeac5869263718f8631a187.bin
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\ShaderCache\a\a771df8aafeac5869263718f8631a187.bin
+    projectPath: Library\ShaderCache\a\a771df8aafeac5869263718f8631a187.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\ShaderCache\b\b44290c08b95430be43bf6245ee812fd.bin
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\ShaderCache\b\b44290c08b95430be43bf6245ee812fd.bin
+    projectPath: Library\ShaderCache\b\b44290c08b95430be43bf6245ee812fd.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\ShaderCache\b\bbb59cd910ddf8e45a323508cba12c41.bin
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\ShaderCache\b\bbb59cd910ddf8e45a323508cba12c41.bin
+    projectPath: Library\ShaderCache\b\bbb59cd910ddf8e45a323508cba12c41.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\ShaderCache\e\ee4e51a2c8580d9c34e7b241539abd79.bin
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\ShaderCache\e\ee4e51a2c8580d9c34e7b241539abd79.bin
+    projectPath: Library\ShaderCache\e\ee4e51a2c8580d9c34e7b241539abd79.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Library\ShaderCache\EditorEncounteredVariants
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\ShaderCache\EditorEncounteredVariants
+    projectPath: Library\ShaderCache\EditorEncounteredVariants
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CardGame\Library\ShaderCache\f\ffd812904042c420559d6abf60cf2ad8.bin
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Library\ShaderCache\f\ffd812904042c420559d6abf60cf2ad8.bin
+    projectPath: Library\ShaderCache\f\ffd812904042c420559d6abf60cf2ad8.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: CardGame\Library\SourceAssetDB
     fullPath: C:\Users\cjbar\CardGame\CardGame\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
@@ -536,8 +1178,8 @@ MonoBehaviour:
     fullPath: C:\Users\cjbar\CardGame\CardGame\Logs\AssetImportWorker0.log
     projectPath: Logs\AssetImportWorker0.log
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
+    indexStatus: 1
+    workTreeStatus: 1
   - path: CardGame\Logs\AssetImportWorker0-prev.log
     fullPath: C:\Users\cjbar\CardGame\CardGame\Logs\AssetImportWorker0-prev.log
     projectPath: Logs\AssetImportWorker0-prev.log
@@ -548,14 +1190,38 @@ MonoBehaviour:
     fullPath: C:\Users\cjbar\CardGame\CardGame\Logs\shadercompiler-AssetImportWorker0.log
     projectPath: Logs\shadercompiler-AssetImportWorker0.log
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: CardGame\Logs\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: C:\Users\cjbar\CardGame\CardGame\Logs\shadercompiler-UnityShaderCompiler.exe0.log
-    projectPath: Logs\shadercompiler-UnityShaderCompiler.exe0.log
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Logs\shadercompiler-UnityShaderCompiler.exe1.log
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Logs\shadercompiler-UnityShaderCompiler.exe1.log
+    projectPath: Logs\shadercompiler-UnityShaderCompiler.exe1.log
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Logs\shadercompiler-UnityShaderCompiler.exe2.log
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Logs\shadercompiler-UnityShaderCompiler.exe2.log
+    projectPath: Logs\shadercompiler-UnityShaderCompiler.exe2.log
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\cjbar\CardGame\CardGame\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: CardGame\ProjectSettings\SceneTemplateSettings.json
+    fullPath: C:\Users\cjbar\CardGame\CardGame\ProjectSettings\SceneTemplateSettings.json
+    projectPath: ProjectSettings\SceneTemplateSettings.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\Temp\__Backupscenes\0.backup
+    fullPath: C:\Users\cjbar\CardGame\CardGame\Temp\__Backupscenes\0.backup
+    projectPath: Temp\__Backupscenes\0.backup
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: CardGame\Temp\UnityLockfile
     fullPath: C:\Users\cjbar\CardGame\CardGame\Temp\UnityLockfile
     projectPath: Temp\UnityLockfile
@@ -565,6 +1231,24 @@ MonoBehaviour:
   - path: CardGame\Temp\workerlic
     fullPath: C:\Users\cjbar\CardGame\CardGame\Temp\workerlic
     projectPath: Temp\workerlic
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CardGame\UserSettings\EditorUserSettings.asset
+    fullPath: C:\Users\cjbar\CardGame\CardGame\UserSettings\EditorUserSettings.asset
+    projectPath: UserSettings\EditorUserSettings.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Sprites\Ember.png
+    fullPath: C:\Users\cjbar\CardGame\Sprites\Ember.png
+    projectPath: ..\Sprites\Ember.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\TitleAboutBackground.png
+    fullPath: C:\Users\cjbar\CardGame\Sprites\TitleAboutBackground.png
+    projectPath: ..\Sprites\TitleAboutBackground.png
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1

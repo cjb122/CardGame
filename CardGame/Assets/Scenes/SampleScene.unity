@@ -717,6 +717,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34dff0aa074bce4eaac834fad0328f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jessAI: {fileID: 693287214}
+  keithAI: {fileID: 2035835214}
   haveToPickButton: 0
   pickPlayer: 0
   pickSuit: 0
@@ -729,6 +731,7 @@ MonoBehaviour:
   heart: {fileID: 19130142583055, guid: 900711de807e7cb418c2c15fb465d7a9, type: 3}
   spade: {fileID: 1891073612814861680, guid: f7b4509887601784d9bb9ee5886f6656, type: 3}
   suitDropdown: {fileID: 1056626137}
+  gameRunning: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -972,6 +975,7 @@ GameObject:
   m_Component:
   - component: {fileID: 693287213}
   - component: {fileID: 693287212}
+  - component: {fileID: 693287214}
   m_Layer: 0
   m_Name: Jess
   m_TagString: Jess
@@ -1045,6 +1049,20 @@ Transform:
   m_Father: {fileID: 519420032}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &693287214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693287211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aabd75555e7db3a4b811378f7aa79953, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  epsilon: 0
+  turnCounter: 0
 --- !u!1 &708633384
 GameObject:
   m_ObjectHideFlags: 0
@@ -3770,6 +3788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2035835213}
   - component: {fileID: 2035835212}
+  - component: {fileID: 2035835214}
   m_Layer: 0
   m_Name: Keith
   m_TagString: Keith
@@ -3843,3 +3862,17 @@ Transform:
   m_Father: {fileID: 519420032}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2035835214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035835211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aabd75555e7db3a4b811378f7aa79953, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  epsilon: 0
+  turnCounter: 0

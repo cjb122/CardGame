@@ -56,8 +56,11 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\SmartAI.cs" />
     <Compile Include="Assets\Scripts\DiscardCard.cs" />
     <Compile Include="Assets\Scripts\CardMovement.cs" />
+    <Compile Include="Assets\Scripts\StateObj.cs" />
+    <Compile Include="Assets\Scripts\DumbAI.cs" />
     <Compile Include="Assets\Scripts\ChoseSuitButton.cs" />
     <Compile Include="Assets\Scripts\GameActions.cs" />
     <Compile Include="Assets\Scripts\Constants.cs" />
@@ -69,8 +72,7 @@
     <Compile Include="Assets\Scripts\DrawCardButton.cs" />
     <Compile Include="Assets\Scripts\CardSprites.cs" />
     <Compile Include="Assets\Scripts\Discard.cs" />
-    <Compile Include="Assets\Scripts\SmartAI.cs" />
-    <Compile Include="Assets\Scripts\DumbAI.cs" />
+    <Compile Include="Assets\Scripts\ButtonScripts.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

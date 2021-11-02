@@ -335,6 +335,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/Scripts/ButtonScripts.cs"
 "Assets/Scripts/Card.cs"
 "Assets/Scripts/CardMovement.cs"
 "Assets/Scripts/CardSprites.cs"
@@ -350,6 +351,7 @@
 "Assets/Scripts/GiveCardToPlayerButton.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/SmartAI.cs"
+"Assets/Scripts/StateObj.cs"
 -langversion:8.0
 
 /deterministic
