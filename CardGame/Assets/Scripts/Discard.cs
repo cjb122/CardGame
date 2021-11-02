@@ -26,6 +26,7 @@ public class Discard : MonoBehaviour
     public void discardCard(Card c)
     {
         discard.Push(c);
+        FindObjectOfType<AudioController>().playSound(0);
         if (c.faceDown)
             c.flipCard();
         

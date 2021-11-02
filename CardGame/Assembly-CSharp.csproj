@@ -71,8 +71,9 @@
     <Compile Include="Assets\Scripts\GiveCardToPlayerButton.cs" />
     <Compile Include="Assets\Scripts\DrawCardButton.cs" />
     <Compile Include="Assets\Scripts\CardSprites.cs" />
-    <Compile Include="Assets\Scripts\Discard.cs" />
     <Compile Include="Assets\Scripts\ButtonScripts.cs" />
+    <Compile Include="Assets\Scripts\Discard.cs" />
+    <Compile Include="Assets\Scripts\AudioController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

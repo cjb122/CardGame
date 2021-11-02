@@ -11,6 +11,7 @@ public class Card : MonoBehaviour
     public Sprite topSprite;
     public CardSprites cardSpriteCollection;
     public SpriteRenderer spriteRenderer;
+    public AudioSource audioSource;
     public bool faceDown;
     GameObject cardObj;
     public bool rotated;

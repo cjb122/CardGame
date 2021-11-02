@@ -18,14 +18,27 @@ public class ButtonScripts : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void startIntro()
+    {
+        Animator a = FindObjectOfType<Animator>();
+        a.SetBool("StartIntro", true);
+    }
+
     public void startGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     public void aboutGame()
     {
-        SceneManager.LoadScene(2);
+        Animator a = FindObjectOfType<Animator>();
+        a.SetBool("LoadAbout", true);
+    }
+
+    public void returnFromAboutGame()
+    {
+        Animator a = FindObjectOfType<Animator>();
+        a.SetBool("LoadAbout", false);
     }
 
     public void nextText()
@@ -33,5 +46,10 @@ public class ButtonScripts : MonoBehaviour
         Animator a = FindObjectOfType<Animator>();
         a.SetInteger("NextText", next);
         next += 1;
+    }
+
+    public void setScene(int scene)
+    {
+        SceneManager.LoadScene(scene);
     }
 }

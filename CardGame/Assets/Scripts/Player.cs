@@ -37,6 +37,7 @@ public class Player : MonoBehaviour
         if (!Object.Equals(c, null))
         {
             hand.Add(c);
+            FindObjectOfType<AudioController>().playSound(0);
             if (playerName == "King" || playerName == "Player")
             {
                 c.moveCard(mat.transform.position.x - (Constants.XMAT / 2) + matOffset, mat.transform.position.y);

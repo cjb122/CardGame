@@ -15,6 +15,8 @@ public class CardMovement : MonoBehaviour
 
     public void moveCard(float xPos, float yPos)
     {
+        FindObjectOfType<AudioController>().playSound(0);
+
         destination = new Vector3(xPos, yPos, this.gameObject.transform.position.z);
         moving = true;
     }
